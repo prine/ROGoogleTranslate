@@ -9,9 +9,20 @@
 import Foundation
 
 public struct ROGoogleTranslateParams {
-    var source = "de"
-    var target = "en"
-    var text = "Ich glaube, du hast den Text zum Übersetzen vergessen"
+    
+    public init() {
+        
+    }
+    
+    public init(source:String, target:String, text:String) {
+        self.source = source
+        self.target = target
+        self.text = text
+    }
+    
+    public var source = "de"
+    public var target = "en"
+    public var text = "Ich glaube, du hast den Text zum Übersetzen vergessen"
 }
 
 
