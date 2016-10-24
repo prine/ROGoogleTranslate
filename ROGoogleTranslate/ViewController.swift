@@ -9,6 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var text:UITextField!
+    @IBOutlet var fromLanguage:UITextField!
+    @IBOutlet var toLanguage:UITextField!
+    @IBOutlet var translation:UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,21 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
+    @IBAction func translate() {
+        let translator = ROGoogleTranslate()
+        translator.apiKey = "" // Add your API Key here
+        
+        var params = ROGoogleTranslateParams()
+        params.source = fromLanguage.text ?? "en"
+        params.target = toLanguage.text ?? "de"
+        params.text = text.text ?? "The textfield is empty"
+        
+        translator.translate(params: params) { (result) in
+            DispatchQueue.main.async {
+                self.translation.text = "\(result)"
+            }
+        }
+    }
 }
 
