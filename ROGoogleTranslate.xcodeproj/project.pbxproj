@@ -8,16 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		CB46171F1DBE32740066AD96 /* ROGoogleTranslate.podspec in Resources */ = {isa = PBXBuildFile; fileRef = CB46171E1DBE32740066AD96 /* ROGoogleTranslate.podspec */; };
+		CB4617211DBE36780066AD96 /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB4617201DBE36780066AD96 /* ROGoogleTranslate.swift */; };
 		CBCA3FBD1DB90B850025D8E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA3FBC1DB90B850025D8E4 /* AppDelegate.swift */; };
 		CBCA3FBF1DB90B850025D8E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA3FBE1DB90B850025D8E4 /* ViewController.swift */; };
 		CBCA3FC21DB90B850025D8E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA3FC01DB90B850025D8E4 /* Main.storyboard */; };
 		CBCA3FC41DB90B850025D8E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBCA3FC31DB90B850025D8E4 /* Assets.xcassets */; };
 		CBCA3FC71DB90B850025D8E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CBCA3FC51DB90B850025D8E4 /* LaunchScreen.storyboard */; };
-		CBCA3FD21DB90F970025D8E4 /* ROGoogleTranslate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBCA3FD11DB90F970025D8E4 /* ROGoogleTranslate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CB46171E1DBE32740066AD96 /* ROGoogleTranslate.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ROGoogleTranslate.podspec; sourceTree = SOURCE_ROOT; };
+		CB4617201DBE36780066AD96 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ROGoogleTranslate.swift; path = Source/ROGoogleTranslate.swift; sourceTree = SOURCE_ROOT; };
 		CBCA3FB91DB90B850025D8E4 /* ROGoogleTranslate.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ROGoogleTranslate.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBCA3FBC1DB90B850025D8E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CBCA3FBE1DB90B850025D8E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		CBCA3FC31DB90B850025D8E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CBCA3FC61DB90B850025D8E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CBCA3FC81DB90B850025D8E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CBCA3FD11DB90F970025D8E4 /* ROGoogleTranslate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ROGoogleTranslate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,7 +81,7 @@
 		CBCA3FCE1DB90B8C0025D8E4 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				CBCA3FD11DB90F970025D8E4 /* ROGoogleTranslate.swift */,
+				CB4617201DBE36780066AD96 /* ROGoogleTranslate.swift */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -161,7 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CBCA3FBF1DB90B850025D8E4 /* ViewController.swift in Sources */,
-				CBCA3FD21DB90F970025D8E4 /* ROGoogleTranslate.swift in Sources */,
+				CB4617211DBE36780066AD96 /* ROGoogleTranslate.swift in Sources */,
 				CBCA3FBD1DB90B850025D8E4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
