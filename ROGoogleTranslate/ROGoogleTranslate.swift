@@ -19,7 +19,14 @@ public struct ROGoogleTranslateParams {
 open class ROGoogleTranslate {
     
     /// Store here the Google Translate API Key
-    var apiKey = ""
+    public var apiKey = ""
+    
+    ///
+    /// Initial constructor
+    ///
+    public init() {
+        
+    }
     
     ///
     /// Translate a phrase from one language into another
