@@ -8,6 +8,7 @@
 [![Issues](https://img.shields.io/github/issues/prine/ROGoogleTranslate.svg?style=flat
            )](https://github.com/prine/ROGoogleTranslate/issues)
 
+Provides a Helper class to simplify the usage of the Google Translate API via Swift.
 
 ## Installation
 
