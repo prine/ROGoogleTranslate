@@ -27,7 +27,7 @@ class ViewController: UIViewController {
     
     @IBAction func translate() {
         let translator = ROGoogleTranslate()
-        translator.apiKey = "AIzaSyBobMU3pSEez-Ux7rlEh02joa7QmkY5BC4" // Add your API Key here
+        translator.apiKey = "" // Add your API Key here
         
         var params = ROGoogleTranslateParams()
         params.source = fromLanguage.text ?? "en"
