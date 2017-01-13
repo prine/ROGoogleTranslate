@@ -53,7 +53,7 @@ open class ROGoogleTranslate {
         }
         
         if let urlEncodedText = params.text.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) {
-            if let url = URL(string: "https://www.googleapis.com/language/translate/v2?key=\(self.apiKey)&q=\(urlEncodedText)&source=\(params.source)&target=\(params.target)&format=text") {
+            if let url = URL(string: "https://translation.googleapis.com/language/translate/v2??key=\(self.apiKey)&q=\(urlEncodedText)&source=\(params.source)&target=\(params.target)&format=text") {
             
                 let httprequest = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
                     guard error == nil else {
@@ -64,7 +64,11 @@ open class ROGoogleTranslate {
                     if let httpResponse = response as? HTTPURLResponse {
                         
                         guard httpResponse.statusCode == 200 else {
-                            print("Something went wrong: \(data)")
+                            
+                            if let data = data {
+                                print("Response [\(httpResponse.statusCode)] - \(data)")
+                            }
+                            
                             return
                         }
                         

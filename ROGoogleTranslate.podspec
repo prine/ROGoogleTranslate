@@ -9,12 +9,12 @@
 
 Pod::Spec.new do |spec|
     spec.name         = 'ROGoogleTranslate'
-    spec.version      = '0.0.4'
+    spec.version      = '0.0.6'
     spec.license      = { :type => 'MIT' }
     spec.homepage     = 'https://github.com/prine/ROGoogleTranslate'
     spec.authors      = { 'Robin Oster' => 'work@prine.ch' }
     spec.summary      = 'Simplifies the usage of the Google Translate API via Swift'
-    spec.source       = { :git => 'https://github.com/prine/ROGoogleTranslate.git', :tag => "0.0.4" }
+    spec.source       = { :git => 'https://github.com/prine/ROGoogleTranslate.git', :tag => "0.0.6" }
     spec.source_files = 'Source/**/*'
     spec.framework    = 'SystemConfiguration'
     spec.ios.deployment_target  = '9.0'
