@@ -36,6 +36,9 @@ translator.translate(params: params) { (result) in
 }
 ```
 
+## Are you receiveing a '403' error code in the request?
+If you get a 403 Response, please check your Google Api Account. Google recently changed the policies of the Translation Api and you have to add a credit card, otherwise you will receive a 403 Error.
+
 ## Requirements
 
 - iOS 9.0+
