@@ -23,13 +23,11 @@ pod "ROGoogleTranslate"
 Create an instance of the `ROGoolgeTranslate` class and store the API key from the Google Translate API. To do a translation call the `translate` method and pass the `ROGoogleTranslateParams` (sourceLanguage, targetLanguage, textToTranslate). You will asynchronously retrieve the translated text in the `callback` object.
 
 ```Swift
-let translator = ROGoogleTranslate()
-translator.apiKey = "" // Add your API Key here
+var params = ROGoogleTranslateParams(source: "en",
+                                     target: "de",
+                                     text:   "Here you can add your sentence you want to be translated")
 
-var params = ROGoogleTranslateParams()
-params.source = "en"
-params.target = "de"
-params.text = "Here you can add your sentence you want to be translated"
+let translator = ROGoogleTranslate(with: "API Key here")
 
 translator.translate(params: params) { (result) in
     print("Translation: \(result)")
